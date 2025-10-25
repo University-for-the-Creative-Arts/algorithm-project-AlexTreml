@@ -40,9 +40,9 @@ A procedural **material** uses the scalar parameter `WeatherIntensity` from the 
 
 ### Sky Integration
 To make the system immersive, the material was applied to a **Sky Sphere** that surrounds the player.  
-As intensity rises, the entire sky brightens and the scrolling texture accelerates, giving the sense of a storm forming.  
-Because the MetaSound and material share the same input value, the visual and audio atmospheres evolve together.  
-This approach stays fully procedural—no pre-recorded animation—since all parameters are algorithmically generated from live input.
+As intensity rises, the entire sky brightens and the scrolling texture accelerates.  
+Because the MetaSound and material share the same input value, the visual and audio atmospheres change together.  
+All parameters are generated from live input.
 
 
 https://github.com/user-attachments/assets/8ae0a753-e3a8-4166-b713-e56ee91600c4
