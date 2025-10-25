@@ -28,7 +28,7 @@ The value is multiplied by `Delta Seconds` each Tick and clamped between 0 and 1
 The same value is sent simultaneously to:
 - the MetaSound (`Set Float Parameter "Intensity"`)  
 - and a **Material Parameter Collection (MPC_Weather)** controlling visuals.
-- 
+  
 ![Blueprint](https://github.com/user-attachments/assets/8cf5015a-c678-4eb3-9b56-d252c5ba05dd)
 
 ### Visual Side
