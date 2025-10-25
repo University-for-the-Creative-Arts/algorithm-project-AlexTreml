@@ -1,4 +1,4 @@
-# Procedural Systems #
+
 
 ## Overview
 This project demonstrates two procedural systems built inside Unreal Engine 5:  
