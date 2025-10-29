@@ -19,8 +19,6 @@ Inside the MetaSound graph:
 - Its tone and amplitude are filtered through a **SV Filter (Low-Pass)** to make it feel like shifting weather.  
 - The filter cutoff frequency and overall gain are driven by an exposed float input named **`Intensity`**.
   
-![Meta](https://github.com/user-attachments/assets/2a8afbeb-4560-4b01-9709-511bc9f5850c)
-
 That `Intensity` value is set dynamically inside the **WeatherController Blueprint**.  
 The Blueprint stores the current intensity (0–1 range) and updates it every frame based on player input.  
 When the player **holds W**, intensity rises; holding **S** lowers it.  
@@ -29,14 +27,10 @@ The same value is sent simultaneously to:
 - the MetaSound (`Set Float Parameter "Intensity"`)  
 - and a **Material Parameter Collection (MPC_Weather)** controlling visuals.
   
-![Blueprint](https://github.com/user-attachments/assets/8cf5015a-c678-4eb3-9b56-d252c5ba05dd)
-
 ### Visual Side
 A procedural **material** uses the scalar parameter `WeatherIntensity` from the MPC to modify:
 - the speed of a panning noise texture (simulating wind motion),
 - and a color lerp that shifts from calm blue tones to intense orange hues.
-  
-![Material](https://github.com/user-attachments/assets/1406f356-07af-4e87-91b4-dcac34df0b15)
 
 ### Sky Integration
 To make the system immersive, the material was applied to a **Sky Sphere** that surrounds the player.  
