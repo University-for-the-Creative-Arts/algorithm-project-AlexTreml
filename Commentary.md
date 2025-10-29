@@ -27,7 +27,7 @@ The same value is sent simultaneously to:
 - the MetaSound (`Set Float Parameter "Intensity"`)  
 - and a **Material Parameter Collection (MPC_Weather)** controlling visuals.
   
-### Visual Side
+### Visuals
 A procedural **material** uses the scalar parameter `WeatherIntensity` from the MPC to modify:
 - the speed of a panning noise texture (simulating wind motion),
 - and a color lerp that shifts from calm blue tones to intense orange hues.
